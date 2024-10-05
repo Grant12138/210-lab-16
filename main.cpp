@@ -44,8 +44,23 @@ int main()
     Color color1;
 
     // Using parametrized constructor
-    Color color2(255, 0, 111);
+    Color color2(255, 122, 111);
 
+    // Using partial constructor
+    Color color3(100, 100);
+
+    // Print out the RGB values
+    cout << "Color 1: ";
+    color1.print();
+
+    cout << "Color 2: ";
+    color2.print();
+
+    cout << "Color 3: ";
+    color3.print();
+
+    cout << '\n';
+    return 0;
 }
 
 void print_id(string const& lab_desc)
